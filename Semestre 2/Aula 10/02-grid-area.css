@@ -1,0 +1,39 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 10px solid #9f0627;
+
+    display: grid;
+    grid-template-rows: 100px 300px 100px;
+    /* Uma parte tem 3/4 e a outra tem 1/4 de ocupação da tela*/
+    grid-template-columns: 3fr 1fr;
+    /* Organização de divs */
+    grid-template-areas:
+        /* Nomeando para dizer que ocupa 2 colunas */
+        'header header'
+        'main aside'
+        'footer footer'
+}
+
+.item {
+    padding: 10px;
+    background-color: #fe6f8e;
+    color: white;
+    border: 10px solid #ff315e;
+}
+
+.item-1 {
+    grid-area: header;
+}
+
+.item-2 {
+    grid-area: main;
+}
+
+.item-3 {
+    grid-area: aside;
+}
+
+.item-4 {
+    grid-area: footer;
+}
