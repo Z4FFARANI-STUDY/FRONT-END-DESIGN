@@ -1,0 +1,19 @@
+.container {
+    background-color: aquamarine;
+    min-height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*ou você pode declarar os dois anteriores com flex-flow: row wrap;*/
+
+    justify-content: space-around;
+}
+
+.container div {
+    background-color: #25795d;
+    color: white;
+    width: 120px;
+    height: 200px;
+    font-size: 16px;
+    margin: 5px;
+}
