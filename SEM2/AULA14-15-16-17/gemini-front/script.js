@@ -49,8 +49,6 @@ form.addEventListener('submit', (event) => {
 
     .then(res => res.json())
     .then(data => {
-        console.log(data);
-
         const messageElement = document.createElement("div");
         messageElement.classList.add("message");
         messageElement.classList.add("message--assistant");
