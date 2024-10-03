@@ -30,13 +30,13 @@ form.addEventListener('submit', (event) => {
     messageElement.classList.add("message");
     messageElement.classList.add("message--sent");
     messageElement.innerHTML = `
-        <div class="message__text">${messageText}</div>
+        <div class="message_text">${messageText}</div>
     `;
 
     chatLog.appendChild(messageElement);
 
     // Requisição para API local
-    fetch("http://localhost:3000/sendMessage/", {
+    fetch("http://localhost:3000/sendMessage", {
         method: "POST",
         // Estrutura o tipo de conteúdo
         headers: {
@@ -45,6 +45,19 @@ form.addEventListener('submit', (event) => {
         body: JSON.stringify({
             messages
         })
-    });
+    })
 
+    .then(res => res.json())
+    .then(data => {
+        console.log(data);
+
+        const messageElement = document.createElement("div");
+        messageElement.classList.add("message");
+        messageElement.classList.add("message--assistant");
+        messageElement.innerHTML = `
+            <div class="message_text">${data.chat_completion}</div>
+        `;
+
+        chatLog.appendChild(messageElement);
+    })
 });
