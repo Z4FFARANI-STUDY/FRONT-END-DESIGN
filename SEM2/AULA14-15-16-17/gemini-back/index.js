@@ -15,7 +15,7 @@ app.post("/sendMessage", async (req, res) => {
     const { messages } = req.body;
     
     // Instanciando o Gemini com a API KEY
-    const genAI = new GoogleGenerativeAI("AIzaSyCcg-PzORpKv43BzkRsxBWWX8-4ABhJGu4");
+    const genAI = new GoogleGenerativeAI(API_GOOGLE_GEMINI_KEY);
     
     // Selecionando o modelo a ser utilizado
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
