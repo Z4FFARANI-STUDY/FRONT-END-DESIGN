@@ -58,12 +58,14 @@ O desenvolvimento de Front-end Design é uma combinação de arte e ciência, qu
 <br>
 
 # INSTRUÇÕES
-Criar uma pasta no computador para ser o repositório local.
+1. Em um terminal, clonar o repositório:
+```bash
+git clone https://github.com/Z4FFARANI-STUDY/FRONT-END-DESIGN.git
+```
 
-Abrir a pasta criada em uma IDE de preferência.
+2. Em um terminal, navegar até a pasta do projeto:
+```bash
+cd FRONT-END-DESIGN
+```
 
-No terminal da IDE, clonar o repositório com `git clone https://github.com/Z4FFARANI-STUDY/FRONT-END-DESIGN.git`.
-
-No terminal da IDE, navegar até a pasta do projeto com `cd FRONT-END-DESIGN`.
-
-Acessar o conteúdo das aulas adiante da pasta `SEM1` ou `SEM2`.
+3. Acessar o conteúdo das aulas adiante da pasta `SEM1` ou `SEM2`.
