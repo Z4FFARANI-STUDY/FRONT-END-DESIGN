@@ -63,7 +63,7 @@ O desenvolvimento de Front-end Design é uma combinação de arte e ciência, qu
 git clone https://github.com/Z4FFARANI-STUDY/FRONT-END-DESIGN.git
 ```
 
-2. Em um terminal, navegar até a pasta do projeto:
+2. No terminal, navegar até a pasta do projeto:
 ```bash
 cd FRONT-END-DESIGN
 ```
