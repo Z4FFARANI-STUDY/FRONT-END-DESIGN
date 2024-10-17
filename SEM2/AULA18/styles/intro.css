@@ -1,0 +1,23 @@
+div {
+  background-color: green;
+  width: 50%;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px 10px;
+  font-family: Helvetica;
+  transition: 0.3s;
+  border: 1px solid green;
+}
+div p {
+  color: #c3005e;
+}
+div:hover {
+  background: transparent;
+}
+div:hover p {
+  color: green;
+}
+
+p {
+  color: #c3005e;
+}/*# sourceMappingURL=intro.css.map */
